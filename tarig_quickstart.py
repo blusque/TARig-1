@@ -130,8 +130,8 @@ def predict_template(args):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="TARig")
-    parser.add_argument("--checkpoint", default="C:/Project/Python/tarig/checkpoints/20240407_195613/model_best.pth.tar", type=str)
-    parser.add_argument("--mesh_filename", default="C:/Project/Dataset/thesis/7540_flower/7540_flower.obj", type=str)
+    parser.add_argument("--checkpoint", default="/home/zhouyingchengliao/project/TARig-1/checkpoints/model_best.pth.tar", type=str)
+    parser.add_argument("--mesh_filename", default="/home/zhouyingchengliao/project/TARig-1/data/Ch03_nonPBR.obj", type=str)
     parser.add_argument("--normalize_mesh", default=1, type=int, help="whether to normalize the mesh")
     # hyper-parameters
     parser.add_argument("--n_joints", default=21, type=int, help="number of joints")
